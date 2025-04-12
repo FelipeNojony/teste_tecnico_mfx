@@ -1,8 +1,7 @@
     async function converterNumeroExtenso() {
     const numero = document.getElementById("numero").value;
     const proxy = "https://cors-anywhere.herokuapp.com/";
-    const url =
-        proxy + "https://www.dataaccess.com/webservicesserver/NumberConversion.wso";
+    const url = proxy + "https://www.dataaccess.com/webservicesserver/NumberConversion.wso"; // https://cors-anywhere.herokuapp.com/corsdemo utilizando esse site gerador de uma demonstração temporaria de cors foi o unico modo que encontrei para fazer o app rodar sem necessidade de back-end e sem necessidade de biblioteca de terceiros, basta entra no site clicar no botão que é gerado uma demonstração temporaria de cors, (usar somente em ambiente de desenvolvimento).
     const body = `
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
             <soap:Body>
